@@ -6,7 +6,6 @@ import (
 	"github.com/kratos-portal/internal/user/biz"
 )
 
-// NewUserService 实现gRPC
 func NewUserService(user *biz.UserCase) *UserService {
 	return &UserService{
 		user: user,

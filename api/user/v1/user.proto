@@ -4,35 +4,35 @@ package user.api.v1;
 
 option go_package="github.com/kratos-portal/api/user/v1";
 
-//import "google/api/annotations.proto";
+import "google/api/annotations.proto";
 
 service UserService {
   rpc CreateUser (CreateUserRequest) returns (CreateUserReply) {
-/*    option (google.api.http) = {
+    option (google.api.http) = {
       post: "/v1/user"
       body: "*"
-    };*/
+    };
   }
   rpc DeleteUser (DeleteUserRequest) returns (DeleteUserReply) {
-/*    option (google.api.http) = {
+    option (google.api.http) = {
       delete: "/v1/user/{id}"
-    };*/
+    };
   }
   rpc UpdateUser (UpdateUserRequest) returns (UpdateUserUserReply) {
-/*    option (google.api.http) = {
+    option (google.api.http) = {
       put: "/v1/user/{id}"
       body: "*"
-    };*/
+    };
   }
   rpc GetUser (GetUserRequest) returns (GetUserReply) {
-/*    option (google.api.http) = {
+    option (google.api.http) = {
       get: "/v1/user/{id}"
-    };*/
+    };
   }
   rpc ListUser (ListUserRequest) returns (ListUserReply) {
-/*    option (google.api.http) = {
+    option (google.api.http) = {
       get: "/v1/user"
-    };*/
+    };
   }
 }
 
