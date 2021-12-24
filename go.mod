@@ -3,6 +3,7 @@ module github.com/kratos-portal
 go 1.15
 
 require (
+	github.com/ddliu/go-httpclient v0.6.9
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-redis/redis/v8 v8.11.4
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013
